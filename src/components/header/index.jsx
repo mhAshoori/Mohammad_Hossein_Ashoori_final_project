@@ -20,7 +20,7 @@ export class Header extends Component {
         const {cart} = this.context;
         return (
             <>
-                <header>
+                <header >
                     <div className="menu" onClick={this.menuToggle}>
                         <img src={Menu} alt="" width="20"/>
                     </div>
@@ -46,6 +46,13 @@ export class Header extends Component {
                         </div>
                     </nav>
                 </header>
+                <div className="static-header d-flex flex-row  align-items-center gy-0">
+                    <Link to="/categories"><p className="">Categories</p></Link>
+                    <Link to="/club"><p className="">Clinets Club</p></Link>
+                    <Link to="/giftcards"><p className="">Lian Gift Cards</p></Link>
+                    <Link to="/largeselling"><p className="">Large Scale Selling</p></Link>
+                    
+                </div>
             </>
         )
     }

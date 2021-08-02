@@ -1,15 +1,17 @@
 header{
     min-height: 70px;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
     overflow: hidden;
+    background-color: #1F1C28;
 }
 
 header .logo a{
     text-decoration: none;
     text-transform: uppercase;
-    color: black;
+    
 }
 
 header nav{
@@ -25,6 +27,7 @@ nav ul li a{
     text-transform: uppercase;
     color: #555;
     padding: 0 15px;
+    color: gainsboro;
 }
 nav ul li a:hover{
     color: lightseagreen;
@@ -32,6 +35,7 @@ nav ul li a:hover{
 nav .nav-cart{
     cursor: pointer;
     position: relative;
+    
 }
 nav .nav-cart span{
     position:absolute;
@@ -60,7 +64,7 @@ header .close{
         justify-content: space-around;
         align-items: center;
         flex-direction: column;
-        background: white;
+        background: #1F1C28;
         z-index: 99;
         opacity: 0.97;
         transition: 0.5s linear;
@@ -77,4 +81,18 @@ header .close{
     header ul.toggle{
         top: 0; 
     }
+}
+.static-header{
+    background-color: #1F1C28;
+    
+    position: sticky;
+    top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+.static-header > *{
+    margin: 0.25rem 2rem;
+    text-decoration: none;
+    color: gainsboro;
 }

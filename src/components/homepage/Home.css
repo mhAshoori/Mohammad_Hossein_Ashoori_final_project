@@ -1,0 +1,14 @@
+.left-up {
+  background: #2a3d1f;
+  background: -webkit-linear-gradient(top left, #2a3d1f, #968539);
+  background: -moz-linear-gradient(top left, #2a3d1f, #968539);
+  background: linear-gradient(to bottom right, #2a3d1f, #968539);
+  border-radius: 0.5rem;
+
+}
+.left-down {
+    background: #2a3d1f;
+    background: linear-gradient(to bottom right, #7A7FBA, #11C37C);
+    border-radius: 0.5rem;
+  }
+
